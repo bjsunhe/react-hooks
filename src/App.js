@@ -1,4 +1,5 @@
 import React from "react";
+import Route from './components/Route'
 import Accordion from "./components/Accordion";
 
 const items = [
@@ -18,7 +19,13 @@ const items = [
 export default () => {
   return (
     <div>
-      <Accordion items={items} />
+      <Route path='/'>
+        <Accordion items={items} />
+      </Route>
+      <Route path='/list'>
+        <Accordion items={items} />
+      </Route>
+      
     </div>
   );
 };
