@@ -1,6 +1,7 @@
 import React from "react";
 import Route from './components/Route'
 import Accordion from "./components/Accordion";
+import Search from './components/Search'
 
 const items = [
   {
@@ -22,8 +23,8 @@ export default () => {
       <Route path='/'>
         <Accordion items={items} />
       </Route>
-      <Route path='/list'>
-        <Accordion items={items} />
+      <Route path='/search'>
+        <Search />
       </Route>
       
     </div>
